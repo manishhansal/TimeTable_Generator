@@ -81,7 +81,7 @@ function validate(data, room, instructor, time) {
 
 app.post("/timeTable", async (req, res) => {
   const data = await Timetable.find();
-  
+
   var count;
   if (data[data.length - 1] === undefined) {
     count = -1;
